@@ -22,6 +22,14 @@ public class Interactor implements ActionListener{
 	public void actionPerformed(ActionEvent arg0) {
 	
 		String thistext = textInput.getText();
+		
+		if(thistext.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "Please input text.");
+		}
+		else if(thistext.length()==1) {
+			JOptionPane.showMessageDialog(null, "Enter two or three words.");
+		}
+		else
 		JOptionPane.showMessageDialog(null, "The word "+thistext +" is " +pal.isPalindrome(thistext));
 	}
 	
