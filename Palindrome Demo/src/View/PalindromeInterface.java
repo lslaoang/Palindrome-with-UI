@@ -36,6 +36,8 @@ public class PalindromeInterface extends JFrame {
 		buttonRun.setVisible(true);
 		buttonRun.addActionListener(interact);
 		
+		getRootPane().setDefaultButton(buttonRun);
+		
 		//label
 		labelTop.setBounds(18, 15, 200, 25);
 		
