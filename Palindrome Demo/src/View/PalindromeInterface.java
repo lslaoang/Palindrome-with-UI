@@ -22,6 +22,7 @@ public class PalindromeInterface extends JFrame {
 	public PalindromeInterface(){
 		setTitle("Palindrome");
 		setSize(250, 200);
+		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
